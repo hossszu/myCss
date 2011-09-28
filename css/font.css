@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Ubuntu-M';
+    src: url('Fonts/Ubuntu-M.ttf');
+} 
+@font-face {
+    font-family: 'Ubuntu-MI'; 
+    src: url('Fonts/Ubuntu-MI.ttf');
+} 
+@font-face {
+    font-family: 'Ubuntu-B';
+    src: url('Fonts/Ubuntu-B.ttf');
+} 
+@font-face {
+    font-family: 'Ubuntu-BI';
+    src: url('Fonts/Ubuntu-BI.ttf');
+} 
+@font-face {
+    font-family: 'Ubuntu-L';
+    src: url('Fonts/Ubuntu-L.ttf');
+} 
+@font-face { 
+    font-family: 'Ubuntu-LI';
+    src: url('Fonts/Ubuntu-LI.ttf');
+} 
+@font-face { 
+    font-family: 'Ubuntu-R';
+    src: url('Fonts/Ubuntu-R.ttf');
+} 
+@font-face {
+    font-family: 'Ubuntu-RI';
+    src: url('Fonts/Ubuntu-RI.ttf');
+} 
+@font-face { 
+    font-family: 'Gruppo';
+    src: url('Fonts/Gruppo.ttf');
+} 
+@font-face {
+    font-family: 'Raleway';
+    src: url('Fonts/Raleway-Thin.ttf');
+} 
+/*@import url(http://fonts.googleapis.com/css?family=Gruppo|Raleway:100);
+url('Fonts/Gruppo.ttf');
+url('Fonts/Raleway-Thin.ttf');*/

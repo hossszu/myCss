@@ -1,0 +1,532 @@
+@import url('font.css');
+@import url('mainBlack.css');/*import this one if use black background on html*/
+html{
+    text-rendering: optimizeLegibility;
+    background: url(../images/tree.png)top left no-repeat, -moz-linear-gradient(left, white 26%, #f1f1f1 70%, white 93%);
+    background: url(../images/tree.png)top left no-repeat, -webkit-linear-gradient(left, white 10%, #f7f7f7 39%);
+    background: url(../images/tree.png)top left no-repeat, -ms-linear-gradient(left, #171e26 90%, #626131 99%);
+    background: url(../images/tree.png)top left no-repeat, -o-linear-gradient(left, #171e26 90%, #626131 99%); 
+    overflow-y:scroll; 
+}
+/*#33302A #631703 #725529 #C73703 #CDBE7A
+#342C1D #5F1700 #6C6125 #F3BA00 #C88867
+*/
+html,body{
+    padding:0;
+    margin:0;
+    font-family:  Ubuntu-L;
+    color:#342C1D;
+  
+}
+#header{
+    position: relative;
+    margin-bottom:23px;
+    text-align: left; 
+}
+#p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10 {
+  white-space: nowrap; text-shadow: .5em .5em .1em #cococo;}
+/*#p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10 {
+  text-indent: 0 }*/
+#p1 {position: relative;top:-10px;left:50px; display: inline-block; -moz-transform:rotate(-33deg);
+    font-size: 20px;
+    color:navy;}
+#p2  {position: relative;top:-20px;left:50px;  display: inline-block; -moz-transform:rotate(-20deg);
+}
+#p3  {position: relative;top:40px;left:70px;  display: inline-block; -moz-transform:rotate(-30deg); 
+    font-size: 25px;
+    color: #8b9919;}
+#p4  {position: relative;top:30px;left:150px;  display: inline-block; -moz-transform:rotate(-10deg);
+    font-size: 30px;
+    color: aqua;}
+#p5  {position: relative;top:-20px;left:400px;  display: inline-block; -moz-transform:rotate(-50deg) }
+#p6  {position: relative;top:-30px;left:450px;  display: inline-block; -moz-transform:rotate(20deg) }
+#p7  {position: relative;top:-40px;left:500px;  display: inline-block; -moz-transform:rotate(30deg) }
+#p8  {position: relative;top:-50px;left:550px;  display: inline-block; -moz-transform:rotate(40deg) }
+#p9  {position: relative;top:-60px;left:650px;  display: inline-block; -moz-transform:rotate(45deg) }
+
+#p10{
+    position: relative;top:10px;left:420px; 
+    font-family:  Ubuntu-L;  
+    display: inline-block;
+    font-size: 30px;
+    color:#33302A;
+    -moz-transform:     rotate(-10deg) translate(-20px, 95px);
+    -webkit-transform:     rotate(-10deg) translate(-20px, 95px);
+    -ms-transform:     rotate(-10deg) translate(-20px, 95px);
+    -o-transform:     rotate(-10deg) translate(-20px, 95px);
+    text-shadow: .5em .5em .1em #5F1700;
+
+}
+article.index{
+    margin-left:24px;
+     padding-top:25px;
+    text-align: justify;
+}
+#main_wrapper{
+    padding-top:25px;
+    padding-left:10px;
+    margin-left: 25px;
+    min-height: 250px;
+    background: rgba(255,255,255,0.6);
+}
+#right_box_wraper{
+    float: right;
+    width: 225px;
+    min-height:290px;
+    border: solid 1px gray;
+    margin: 0px ;
+    padding:90px 0px 15px;
+}
+#main_menu h3{
+    text-align: center;
+    font-family: Ubuntu-LI;
+    font-size: 45px;
+    color:#ff0051;
+    color:#342C1D;
+    font-weight: 100;
+    padding:0;margin:0;
+}
+ ul#main_menu{
+    font-family: Ubuntu-L;
+    list-style: none;
+    padding:0px;
+    margin:0px;
+}
+ ul#main_menu li{
+    padding:0px;
+    margin:2px;
+    border:solid 1px #f7f7f7;
+    background:url(../images/1px_f1.png);
+    background-repeat:no-repeat;
+    background-position: top left;
+    background-size:8px 30px;
+
+    -moz-transition-property:background-size; 
+    -moz-transition-duration: 0.5s, 0.5s; 
+    -moz-transition-timing-function:ease-out;
+
+    -webkit-transition-property:background-size;
+    -webkit-transition-duration: 0.5s, 0.5s; 
+    -webkit-transition-timing-function:ease-out;  
+
+    -ms-transition-property:background-size;
+    -ms-transition-duration: 0.5s, 0.5s; 
+    -ms-transition-timing-function:ease-out;  
+
+    -o-transition-property:background-size;
+    -o-transition-duration: 0.5s, 0.5s; 
+    -o-transition-timing-function:ease-out;   
+}
+ ul#main_menu li:hover{
+    background:url(../images/1px_f1.png);
+    background-repeat:no-repeat;
+    background-position: top left;
+    background-size:220px 30px;
+}
+ ul#main_menu li.selected{
+    padding:0px;
+    margin:2px;
+    border:solid 1px #f7f7f7;
+    background:url(../images/1px_f1.png);
+    background-repeat:no-repeat;
+    background-position: top right;
+    background-size:8px 30px;
+
+    -moz-transition-property:background-size; 
+    -moz-transition-duration: 0.5s, 0.5s; 
+    -moz-transition-timing-function:ease-in;
+
+    -webkit-transition-property:background-size;
+    -webkit-transition-duration: 0.5s, 0.5s; 
+    -webkit-transition-timing-function:ease-out;
+
+    -ms-transition-property:background-size;
+    -ms-transition-duration: 0.5s, 0.5s; 
+    -ms-transition-timing-function:ease-out;
+
+    -o-transition-property:background-size;
+    -o-transition-duration: 0.5s, 0.5s; 
+    -o-transition-timing-function:ease-out;   
+}
+ ul#main_menu li.selected:hover{
+    background:url(../images/1px_f1.png);
+    background-repeat:no-repeat;
+    background-position: top right;
+    background-size:220px 30px;
+}
+ ul#main_menu li.selected a{
+    color:#8b9919;
+    text-shadow: 2px 2px 2px #c7dd0e;
+    background: transparent;
+    -moz-transition-property:background-size; 
+    -moz-transition-duration: 0.5s, 0.5s; 
+    -moz-transition-timing-function:ease-in;
+
+    -webkit-transition-property:background-size; 
+    -webkit-transition-duration: 0.5s, 0.5s; 
+    -webkit-transition-timing-function:ease-in;
+
+    -ms-transition-property:background-size; 
+    -ms-transition-duration: 0.5s, 0.5s; 
+    -ms-transition-timing-function:ease-in;
+
+    -o-transition-property:background-size; 
+    -o-transition-duration: 0.5s, 0.5s; 
+    -o-transition-timing-function:ease-in;
+}
+ ul#main_menu a{
+    -moz-box-shadow: 0px 0px 0px #666 inset;
+    display: block;
+    font-family: Ubuntu-L;
+    text-decoration: none;
+    padding:2px 12px;
+    color:black;
+    background: transparent;
+    text-shadow: 3px 3px 3px #999;
+    -moz-transition-property:text-shadow; 
+    -moz-transition-duration: 0.3s, 0.3s; 
+    -moz-transition-timing-function: ease-in;
+
+    -webkit-transition-property:text-shadow; 
+    -webkit-transition-duration: 0.3s, 0.3s; 
+    -webkit-transition-timing-function: ease-in;
+
+    -ms-transition-property:text-shadow; 
+    -ms-transition-duration: 0.3s, 0.3s; 
+    -ms-transition-timing-function: ease-in;
+
+    -o-transition-property:text-shadow; 
+    -o-transition-duration: 0.3s, 0.3s; 
+    -o-transition-timing-function: ease-in;
+}
+ ul#main_menu a:hover{
+    display: block;
+    font-family: Ubuntu-L;
+    text-decoration: none;
+    color:black;
+    text-shadow: 1px 1px 1px #333;
+    background: transparent;
+}
+fieldset{
+    color: #E5E5E5; 
+    border:solid 1px #E5E5E5;
+    margin:20px 50px ;
+    padding:20px;
+}
+legend{
+    font-family: Ubuntu-LI;
+    color:black;
+    border-bottom:solid 1px #E5E5E5;
+    border-right:solid 1px #E5E5E5;
+    padding:2px 10px
+}
+input, textarea {  
+    padding: 9px;  
+    border: solid 1px #E5E5E5;  
+    outline: 0;  
+    width: 200px;   
+    background: white;
+
+    -moz-transition-property:background; 
+    -moz-transition-duration: 0.3s, 0.3s; 
+    -moz-transition-timing-function:ease-in;
+
+    -webkit-transition-property:background; 
+    -webkit-transition-duration: 0.3s, 0.3s; 
+    -webkit-transition-timing-function:ease-in;
+
+    -ms-transition-property:background; 
+    -ms-transition-duration: 0.3s, 0.3s; 
+    -ms-transition-timing-function:ease-in;
+
+    -o-transition-property:background; 
+    -o-transition-duration: 0.3s, 0.3s; 
+    -o-transition-timing-function:ease-in;
+}  
+textarea {  
+    width: 400px;  
+    max-width: 400px;  
+    height: 150px;  
+    line-height: 150%;  
+}  
+input:hover, textarea:hover,  
+input:focus, textarea:focus {  
+    border-color: #C9C9C9; 
+    background: #f7f7f7;
+}  
+label {  
+    margin-left: 20px;  
+    color: #999;  
+}  
+input[type=submit] {   
+    padding: 9px 65px;  
+    background: #fff;  
+    border: 0;  
+    font-size: 16px;  
+    font-family: Ubuntu-L;
+    color: #000;  
+    border:solid 1px #E5E5E5;
+    text-shadow: 3px 3px 3px #999;
+
+    -moz-transition-property:background; 
+    -moz-transition-duration: 0.3s, 0.3s; 
+    -moz-transition-timing-function:ease-in;
+
+    -webkit-transition-property:background; 
+    -webkit-transition-duration: 0.3s, 0.3s; 
+    -webkit-transition-timing-function:ease-in;
+
+    -ms-transition-property:background; 
+    -ms-transition-duration: 0.3s, 0.3s; 
+    -ms-transition-timing-function:ease-in;
+
+    -o-transition-property:background; 
+    -o-transition-duration: 0.3s, 0.3s; 
+    -o-transition-timing-function: ease-in;
+}  
+input[type=submit]:hover {   
+    color:black;
+    text-shadow: 1px 1px 1px #333;
+    background: #f7f7f7;
+
+} 
+header.about h1{
+    font-family: Ubuntu-LI;
+    font-weight: 100;
+    font-size: 20px;
+    padding:30px 340px 20px 1.1em;
+    text-align: justify;
+
+}
+header.about h1:first-letter{
+    margin-left:0.2em;
+    font-weight: 100;
+    font-size: 33px;
+
+}
+section.about{
+    -moz-column-count: 2;  
+    -moz-column-gap: 1.3em;
+    padding:10px 0px 10px 1.1em;
+}
+
+section.about p{
+
+    text-align: justify;
+}
+/*#33302A #631703 #725529  #CDBE7A
+#342C1D #5F1700 #6C6125 #F3BA00 #C88867
+*/
+h3{
+    padding:0 0 0 15px;
+    color:#631703;
+    margin-bottom: -10px;
+}
+h2{
+    color:#999;
+}
+p.col1:first-letter{
+    margin-left:1.5em;
+}
+p.col1{
+
+    border-left:solid 2px #c7dd0e; 
+    padding:40px 120px 20px 1.1em;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 26px;
+
+}
+p.col2:first-letter{
+    margin-left:1.5em;
+}
+p.col2{
+    border-left:solid 4px #c7dd0e;
+    padding:40px 30px 0 1.1em;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 26px;
+
+    -moz-column-count: 2;  
+    -moz-column-gap: 1.3em; 
+
+    -webkit-column-count: 2;  
+    -webkit-column-gap: 1.3em;   
+
+    -ms-column-count: 2;  
+    -ms-column-gap: 1.3em;   
+
+    -o-column-count: 2;  
+    -o-column-gap: 1.3em;   
+}
+p.col3:first-letter{
+    margin-left:1.5em;
+}
+p.col3{
+    border-left:solid 4px #c7dd0e;
+    padding:40px 120px 0 1.1em;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 26px;
+    -webkit-column-count: 3;  
+    -webkit-column-gap: 1.3em;  
+
+    -moz-column-count: 3;  
+    -moz-column-gap: 1.3em;
+
+    -ms-column-count: 3;  
+    -ms-column-gap: 1.3em;   
+
+    -o-column-count: 3;  
+    -o-column-gap: 1.3em;   
+}
+footer{
+    padding:0 ;
+    clear: both;
+}
+.footer{
+    margin-top: 30px;
+    padding:10px;
+    border-top:double 4px #c7dd0e;
+}
+.footer a{
+    color:#8b9919;
+    text-decoration: none;
+}
+
+#headerNav{
+    text-align: center;
+    margin:auto;
+    
+}
+#headerNav ul{
+    font-family: Ubuntu-L;
+    list-style: none;
+    margin:0 70px;   
+    padding:1px;
+    border-bottom:solid 1px #c0c0c0;
+    text-align: center;
+
+}
+#headerNav ul li{
+    display: inline-block;
+    padding-top:20px;
+    margin:0px;
+    background:url(../images/1px_a70c11.png) bottom center;
+    background-size:80px 2px;
+    background-repeat:no-repeat;
+
+    -moz-transition-property:background-size; 
+    -moz-transition-duration: 0.5s, 0.5s;
+    -moz-transition-timing-function:ease-out;
+
+    -webkit-transition-property:background-size; 
+    -webkit-transition-duration: 0.5s, 0.5s; 
+    -webkit-transition-timing-function:ease-out;
+
+    -ms-transition-property:background-size; 
+    -ms-transition-duration: 0.5s, 0.5s; 
+    -ms-transition-timing-function:ease-out;
+
+    -o-transition-property:background-size; 
+    -o-transition-duration: 0.5s, 0.5s; 
+    -o-transition-timing-function:ease-out;
+}
+#headerNav ul li:hover{
+    background:url(../images/1px_a70c11.png) bottom center;
+    background-repeat:no-repeat;
+    background-size:220px 3px;
+}
+#headerNav ul li.selected{
+    margin:0px;
+    background:url(../images/1px_a70c11.png) bottom center;
+    background-size:80px 2px;
+    background-repeat:no-repeat;
+
+    -moz-transition-property:background-size; 
+    -moz-transition-duration: 0.5s, 0.5s; 
+    -moz-transition-timing-function:ease-in;
+
+    -webkit-transition-property:background-size;
+    -webkit-transition-duration: 0.5s, 0.5s;
+    -webkit-transition-timing-function:ease-in;
+
+    -ms-transition-property:background-size;
+    -ms-transition-duration: 0.5s, 0.5s;
+    -ms-transition-timing-function:ease-in;
+
+    -o-transition-property:background-size;
+    -o-transition-duration: 0.5s, 0.5s;
+    -o-transition-timing-function:ease-in;  
+}
+#headerNav ul li.selected:hover{
+    background:url(../images/1px_a70c11.png) bottom center;
+    background-repeat:no-repeat;
+    background-size:220px 3px;
+}
+#headerNav ul li.selected a{
+    width:120px;
+    height:30px;
+    display:inline-block;
+    color:#8b9919;
+    color:#631703;
+    text-shadow: 2px 2px 2px #c7dd0e;
+    background: transparent;
+
+    -moz-transition-property:text-shadow; 
+    -moz-transition-duration: 0.5s, 0.5s; 
+    -moz-transition-timing-function:ease-in;
+
+    -webkit-transition-property:text-shadow;
+    -webkit-transition-duration: 0.5s, 0.5s; 
+    -webkit-transition-timing-function:ease-in;
+
+    -ms-transition-property:text-shadow;
+    -ms-transition-duration: 0.5s, 0.5s; 
+    -ms-transition-timing-function:ease-in;
+
+    -o-transition-property:text-shadow;
+    -o-transition-duration: 0.5s, 0.5s; 
+    -o-transition-timing-function:ease-in;
+}
+#headerNav ul li.selected a:hover{
+
+    font-family: Ubuntu-L;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #333;
+    background: transparent;
+}
+#headerNav ul a{
+    width:120px;
+    height:30px;
+    display:inline-block;
+    -moz-box-shadow: 0px 0px 0px #666 inset;
+    font-family: Ubuntu-L;
+    text-decoration: none;
+    color:black;
+    background: transparent;
+    text-shadow: 3px 3px 3px #999;
+
+    -moz-transition-property:text-shadow; 
+    -moz-transition-duration: 0.3s, 0.3s; 
+    -moz-transition-timing-function: ease-in;
+
+    -webkit-transition-property:text-shadow; 
+    -webkit-transition-duration: 0.3s, 0.3s; 
+    -webkit-transition-timing-function: ease-in;
+
+    -ms-transition-property:text-shadow; 
+    -ms-transition-duration: 0.3s, 0.3s; 
+    -ms-transition-timing-function: ease-in;
+
+    -o-transition-property:text-shadow; 
+    -o-transition-duration: 0.3s, 0.3s; 
+    -o-transition-timing-function: ease-in;
+}
+#headerNav ul a:hover{
+    font-family: Ubuntu-L;
+    text-decoration: none;
+    color:black;
+    text-shadow: 1px 1px 1px #333;
+    background: transparent;
+}
