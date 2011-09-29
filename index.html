@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="keywords" content="HTML5, CSS3, weblapszerkesztés">
+        <meta name="description" content="Szabványkövető weblap készítése">
+        <meta name="robots" content="index, all">
+        <!--[if lte IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <link rel="stylesheet" href="stylesheets/ie.css" type="text/css" media="screen">
+        <![endif]-->
+
+        <link rel="stylesheet" type="text/css"  href="css/main.css">
+        <link rel="stylesheet" type="text/css"  href="css/jquery.snippet.css">
+        <link rel="stylesheet" type="text/css"  href="css/colorbox.css">
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.snippet.js"></script>
+        <script type="text/javascript" src="js/jquery.colorbox.js"></script>
+
+
+        <script>
+            $(document).ready(function(){
+                $("pre.htmlCode").snippet("html",{style:"the",showNum:true});
+                $("pre.styles").snippet("css",{style:"the",showNum:true});
+                $("pre.js").snippet("javascript",{style:"the",showNum:true});
+                $("a[class*=example]").colorbox({width:"80%", height:"80%", iframe:true});
+
+            });
+
+        </script>
+<script>
+  function storeUserScribble(id) {
+    var scribble = document.getElementById('scribble').innerHTML;
+    localStorage.setItem('userScribble',scribble);
+  }
+
+  function getUserScribble() {
+    if ( localStorage.getItem('userScribble')) {
+      var scribble = localStorage.getItem('userScribble');
+    }
+    else {
+      var scribble = '';
+    }
+    document.getElementById('scribble').innerHTML = scribble;
+  }
+
+  function clearLocal() {
+    clear: localStorage.clear();
+    return false;
+  }
+</script>
+
+    </head>
+    <body>
+        <div id="wrap">             
+            <div id="header">
+                <form action="#" method="post">
+
+                    <input type="text" name="search">
+                    <input type="submit" value="keres">                  
+                </form>
+            </div> 
+            <header>            
+                <nav id="headerNav">
+                    <ul>
+                        <li  class='selected'><a href="index.php">home</a></li>
+                        <li ><a href="about.php">about me</a></li>
+
+                        <li ><a href="contact.php">contact</a></li>
+                    </ul>
+                </nav>
+            </header>    
+            <div id="wrapper">
+<aside>
+    <div>
+        <h1>articles</h1>
+        <ul>
+
+            <li class='selected'><a href="index.php">home</a></li>
+            <li><a href="css.php">css</a>
+                <ul>
+                    <li><a href="cssSelectors.php">selectors</a></li>
+                    <li><a href="cssFontFace.php">fontFaces</a></li>
+                    <li><a href="sbox.php">sandBox</a></li>
+
+                </ul>
+            </li>
+            <li><a href="articleHtml5.php">html5</a></li>
+        </ul>
+    </div>
+    
+
+
+    <br>
+
+    <div>
+
+<h1>stickyNotes</h1>
+<div id="scribble" contenteditable="true" onkeyup="storeUserScribble(this.id);"></div>
+<p><a id="c-link" href='' onclick='clearLocal();'>Clear local storage</a></p>
+    <script>
+        getUserScribble();
+    </script>
+
+    </div>
+</aside> 
+
+
+
+
+<section id="main_wrapper">
+
+
+<article class="index">
+<p> 
+    Billinger.us is a Creative Studio established by <strong>Front End Developer, 
+        HTML5 Developer</strong>, Freelance Web Developer and Designer focused on high quality front end
+    design and developing semantic, usable and accessible cross-browser compatible websites.
+
+    <br>
+
+    <br>
+    The idea of Billinger.us is to provide the highest standards of coding and develop innovative 
+    and progressive front end design, making a compromise between client needs, primary 
+    objectives of design and overall aesthetics. During the whole project, from scratch 
+    to the final version my priority is to achieve client`s goals through professional & 
+    high-quality performance, supplemented with a clear, fully semantic and concise code.
+    <br>
+    <br>
+    Billinger.us works in various of areas for a diverse group of clients in an extensive array of 
+    occupations. Always motivated by the pursuit of the new, Billinger.us strives to deliver 
+    straightforward and memorable communications, irrespective of scale and budget. 
+    The studio's approach is built on the idea that there is never one ultimate way 
+    of dealing with a given challenge.
+    <br>
+    <br>
+    Billinger.us makes modern, usable websites using the latest web standard
+    in HTML5, CSS3, accessible jQuery and collaborate with some of the most talented 
+    designers about to create unique and beautiful websites. Many skills and cooperation
+    with a talented team of specialists from various fields, allow me to offer services 
+    from areas such as: design, branding, visual identity and web design.
+    <br>
+    <br>
+
+    Services: Web Development : Web Design : HTML5 : Ecommerce : SEO  : HTML Emails
+</p>
+</article>
+</section>
+
+</div>
+</div>
+<footer>
+    <div><h1>related links</h1>
+        <ul>
+            <li><a href="http://www.csszengarden.com/tr/magyar/">csszengarden.com</a></li>
+
+            <li><a href="http://www.w3.org/TR/css3-selectors/#class-html">w3.org</a></li>
+            <li><a href="http://www.csszengarden.com/tr/magyar/">csszengarden.com</a></li>
+
+        </ul>
+    </div>
+    <div><h1>contact</h1>
+        <span>If you need work done, <a href="contact.php">get in touch</a>. </span></div>
+
+    <div><h1>copiright</h1>
+        This work is published under a <br><a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">Creative Commons license</a>.</div>
+</footer>
+
+</body>
+</html>
