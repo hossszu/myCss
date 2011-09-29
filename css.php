@@ -16,7 +16,7 @@ mint a <a href="http://www.w3.org/">W3C</a>, a <a href="http://www.webstandards.
 <cite>Idézet: <a href="http://www.csszengarden.com/tr/magyar/">csszengarden.com</a></cite></blockquote>
 <article class="thumbnail">
   <figure>  
-   <img src="images/cssSelector.jpg" alt="thumbnail image cssselector">
+   <img src="img/cssSelector.jpg" alt="thumbnail image cssselector">
    </figure>
    <h1>Css szelektorok</h1>
    <time pubdate="pubdate">Kelt: 2011-09-28</time>
@@ -27,7 +27,7 @@ mint a <a href="http://www.w3.org/">W3C</a>, a <a href="http://www.webstandards.
 <br></br>
 <article class="thumbnail">
   <figure>  
-   <img src="images/cssSelector.jpg" alt="thumbnail image cssselector">
+   <img src="img/cssSelector.jpg" alt="thumbnail image cssselector">
    </figure>
    <h1>Web fonts @font-face</h1>
    <time pubdate="pubdate">Kelt: 2011-09-28</time>
